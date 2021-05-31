@@ -1,0 +1,31 @@
+.box-body {
+    padding-left: 220px;
+    height: 75px;
+    margin-top: 70px;
+}
+
+.fa-edit:hover {
+    color: rgb(0,128,0);
+}
+
+.fa-trash:hover {
+    color: rgb(226, 46, 46);
+}
+
+button{
+    width: 180px;
+    margin: 150px 10px 20px 220px;
+}
+
+button:focus{
+    box-shadow:none;
+    border:none;
+}
+
+#salvar:hover{
+    background-color: rgb(0,128,0);
+}
+
+#finalizar:hover{
+    background-color: rgb(255,0,0);
+}

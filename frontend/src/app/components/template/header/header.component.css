@@ -1,0 +1,27 @@
+.logo1{
+    max-height: 70px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+  
+.button{
+    padding-left: 250px;
+    color: #dbdbdb;
+    text-decoration: none;
+}
+  
+.button:hover {
+    /*color: rgb(0, 153, 255);*/
+    color: rgb(255, 215, 0);
+}
+
+header{
+    background: black;
+}
+
+h5{
+    color: white;
+}
+

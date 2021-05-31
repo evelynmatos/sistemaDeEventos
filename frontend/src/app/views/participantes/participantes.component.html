@@ -1,0 +1,43 @@
+<div class="box-body">
+    <h4>
+        Lista de Participantes
+    </h4>
+</div>
+<div class="container search-table">
+    <div class="search-list">
+        <table class="table" id="myTable">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Setor</th>
+                    <th>Patrocinador</th>
+                    <th>Valor</th>
+                    <th>Editar/Excluir</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor= "let participante of arrParticipantes">
+                    <td>{{participante.nome_participante}}</td>
+                    <td>{{participante.setor}}</td>
+                    <td>{{participante.patrocinador}}</td>
+                    <td>{{participante.valor_participante}}</td>
+                    <td>
+                        <i class="fa fa-edit fa-lg" title="Editar participante" (click) = "editar()" aria-hidden="true">&nbsp;</i>
+                        <i class="fa fa-trash fa-lg" title="Excluir participante" (click) = "excluir()" aria-hidden="true">&nbsp;</i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <button type="button" id="salvar" class="btn btn-secondary btn-xs" (click)="cadastrar()">
+        <i class="fa fa-save fa-sm" aria-hidden="true">&nbsp;</i>
+            Cadastrar
+    </button>
+    <button type="button" id="finalizar" class="btn btn-secondary btn-xs" (click)="finalizar()">
+        <i class="fa fa-times fa-sm">&nbsp;</i>
+            Finalizar
+    </button>
+</div>
+<router-outlet></router-outlet>

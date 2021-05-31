@@ -1,0 +1,55 @@
+.box-body {
+    padding-left: 220px;
+    height: 75px;
+}
+
+.fa-plus-circle {
+    padding: 30px;
+    padding-bottom: 10px;
+    padding-left: 1040px;
+    color: black;
+    cursor: pointer;
+}
+
+.fa-plus-circle:hover {
+    color: rgb(0,128,0);
+}
+
+#divData{
+    padding-left: 90px;
+}
+
+#divNotaFiscal{
+    padding-left: 90px;
+}
+
+#inputNotaFiscal{
+    height: 45px;
+}
+
+button{
+    width: 180px;
+    margin: 35px 10px 20px 120px;
+}
+
+button:focus{
+    box-shadow:none;
+    border:none;
+}
+
+#salvar:hover{
+    background-color: rgb(0,128,0);
+}
+
+#finalizar:hover{
+    background-color: rgb(255,0,0);
+}
+
+#imprimir:hover{
+    background-color: rgb(0,0,205);
+}
+
+input:focus{
+    box-shadow:none;
+    border:2px solid #c4c2c2;
+}

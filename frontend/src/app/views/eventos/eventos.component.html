@@ -1,0 +1,46 @@
+<div class="container search-table">
+    <div class="search-box">
+        <div class="row">
+            <div class="evento">Nome do Evento: </div>
+            <div class="col-md-9">
+                <input type="text" id="myInput" class="form-control" [formControl]="queryField"
+                    placeholder="Pesquisar eventos">
+            </div>
+            <button type="button" class="btn btn-light btn-sm" title="Buscar evento" (click)="onSearch()">
+                <i class="fa fa-search fa-sm" aria-hidden="true">&nbsp;</i>
+                Buscar
+            </button>
+        </div>
+    </div>
+
+    <div class="search-list">
+        <div class="example-button-container">
+            <i id= "evento" class="fa fa-plus-circle fa-2x" title="Cadastrar evento" (click)="cadastrar()" aria-hidden="true"></i>
+            <i id= "participante" class="fa fa-list fa-2x" title="Lista de Participantes" (click)="page()" aria-hidden="true"></i>
+        </div>
+        <table class="table" id="myTable">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Data</th>
+                    <th>Ativo</th>
+                    <th>Editar/Excluir</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor= "let evento of evento.eventos">
+                    <td>{{evento.nome_evento}}</td>
+                    <td>{{evento.data}}</td>
+                    <td>{{evento.nome_evento}}</td>
+                    <td>
+                        <i class="fa fa-eye fa-lg" title="Visualizar evento" (click) = "excluir()" aria-hidden="true">&nbsp;</i>
+                        <i class="fa fa-edit fa-lg" title="Editar evento" (click) = "editar()" aria-hidden="true">&nbsp;</i>
+                        <i class="fa fa-trash fa-lg" title="Excluir evento" (click) = "excluir()" aria-hidden="true">&nbsp;</i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+<router-outlet></router-outlet>

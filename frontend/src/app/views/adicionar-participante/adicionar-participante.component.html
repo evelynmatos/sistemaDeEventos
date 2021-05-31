@@ -1,0 +1,40 @@
+<div class="adcParticipante">
+<div class="box-body">
+    <h4>
+        Adicionar Participante
+    </h4>
+</div>
+<div class="container search-table">
+    <div class="search-box">
+        <div class="row">
+            <div class="col-md-7">
+                <fieldset class="evento">Nome* </fieldset>
+                <input type="text" id="myInput" class="form-control" required>
+            </div>
+        </div>
+        &nbsp;&nbsp;
+        <div class="row">
+            <div id="divSetor" class="col-md-5">
+                <fieldset class="data">Setor* </fieldset>
+                <input type="text" id="myInput" class="form-control" required>
+            </div>
+            <div id="divPatrocinador" class="col-md-2">
+                <fieldset>Patrocinador*</fieldset>
+                <mat-radio-group>
+                    <mat-radio-button value="1">Sim</mat-radio-button>
+                    &nbsp;&nbsp;
+                    <mat-radio-button value="2">Não</mat-radio-button>
+                </mat-radio-group>
+            </div>
+        </div>
+    </div>
+    <button type="button" id="salvar" class="btn btn-secondary btn-xs" (click)="salvar()">
+        <i class="fa fa-save fa-sm" aria-hidden="true">&nbsp;</i>
+            Salvar
+    </button>
+    <button type="button" id="cancelar" class="btn btn-secondary btn-xs" (click)="cancelar()">
+        <i class="fa fa-times fa-sm">&nbsp;</i>
+        Cancelar
+    </button>
+</div>
+</div>
